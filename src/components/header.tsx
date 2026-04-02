@@ -42,7 +42,7 @@ const Header: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <header className="fixed w-full bg-background text-foreground z-50">
+    <header className="fixed w-full bg-background  z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <h1>ShahinDev</h1>
 

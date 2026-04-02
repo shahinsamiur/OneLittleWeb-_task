@@ -5,9 +5,9 @@ import { footerSections, socialLinks } from "@/src/_mock/footer";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-background text-foreground pt-16 pb-8 px-6">
+    <footer className="bg-background  pt-16 pb-8 px-6">
       <div className="container mx-auto">
-        <div className="flex flex-wrap border-b border-foreground/20 pb-12">
+        <div className="flex flex-wrap border-b border-border pb-12">
           <div className="w-full sm:w-1/2 md:w-1/5 mb-10 md:mb-0">
             <h2 className="text-2xl font-bold mb-4">ShahinDev</h2>
             <p className="text-sm leading-relaxed pr-4 opacity-80">
