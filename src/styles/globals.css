@@ -23,7 +23,7 @@
   }
 
   h1 {
-    @apply font-bold tracking-tight text-lg md:text-lg lg:text-xl;
+    @apply font-bold tracking-tight text-lg md:text-lg lg:text-4xl;
   }
 
   h2 {

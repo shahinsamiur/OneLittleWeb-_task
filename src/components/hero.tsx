@@ -28,7 +28,7 @@ export default function Hero() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <Button className="mt-6">Schedule A Meeting</Button>
+          <Button className="mt-4">Schedule A Meeting</Button>
           <a className="underline cursor-pointer hover:text-foreground">
             See Pricing
           </a>
