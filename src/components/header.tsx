@@ -4,7 +4,8 @@ import React, { useRef, useState, useEffect } from "react";
 import { gsap } from "gsap";
 import { FiMenu, FiX } from "react-icons/fi";
 import { nav } from "@/src/_mock/nav";
-
+import { Button } from "../utils";
+import Image from "next/image";
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
@@ -42,22 +43,28 @@ const Header: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <header className="fixed w-full bg-background  z-50">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <h1>ShahinDev</h1>
+    <header className="fixed w-full bg-background shadow-[0px_4px_62px_0px_rgba(250,196,210,0.63)] z-50">
+      <div className="container mx-auto px-6 py-0 flex justify-between items-center">
+        <Image
+          src={"/logo.png"}
+          alt="logo"
+          className="w-24 "
+          width={900}
+          height={900}
+        ></Image>
 
         <nav className="hidden md:flex gap-8 text-lg">
           {nav.map((item) => (
             <a
               key={item.name}
               href={item.path}
-              className="hover:opacity-70 transition"
+              className="hover:text-foreground transition border-b-2 border-transparent hover:border-border"
             >
               {item.name}
             </a>
           ))}
         </nav>
-
+        <Button className="hidden md:inline-block">Schedule A Meeting</Button>
         <button
           onClick={() => setIsOpen((prev) => !prev)}
           className="md:hidden text-3xl relative z-50"
@@ -80,6 +87,7 @@ const Header: React.FC = () => {
               {item.name}
             </a>
           ))}
+          <Button className="">Schedule A Meeting</Button>
         </div>
       </div>
     </header>
