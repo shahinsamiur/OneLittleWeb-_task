@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import { FiGithub, FiLinkedin, FiTwitter, FiMail } from "react-icons/fi";
+import { FaTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
 
 export interface FooterSection {
   title: string;
@@ -14,21 +14,31 @@ export interface SocialLink {
 export const footerSections: FooterSection[] = [
   {
     title: "Company",
-    links: ["About", "Careers", "Blog", "Contact"],
+    links: ["About", "Features", "Works", "Career"],
+  },
+  {
+    title: "Help",
+    links: [
+      "Customer Support",
+      "Delivery Details",
+      "Terms & Conditions",
+      "Privacy Policy",
+    ],
   },
   {
     title: "Resources",
-    links: ["Docs", "Support", "Privacy", "Terms"],
-  },
-  {
-    title: "More",
-    links: ["Docs", "Support", "Privacy", "Terms"],
+    links: [
+      "Free eBooks",
+      "Development Tutorial",
+      "How to - Blog",
+      "Youtube Playlist",
+    ],
   },
 ];
 
 export const socialLinks: SocialLink[] = [
-  { icon: FiGithub, href: "#" },
-  { icon: FiLinkedin, href: "#" },
-  { icon: FiTwitter, href: "#" },
-  { icon: FiMail, href: "#" },
+  { icon: FaTwitter, href: "#" },
+  { icon: FaFacebookF, href: "#" },
+  { icon: FaInstagram, href: "#" },
+  { icon: FaGithub, href: "#" },
 ];
