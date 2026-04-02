@@ -5,8 +5,8 @@ import { footerSections, socialLinks } from "@/src/_mock/footer";
 import Image from "next/image";
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-background pt-16">
-      <div className="container mx-auto ">
+    <footer className="bg-background pt-16 ">
+      <div className="container mx-auto px-6 ">
         <div className="flex flex-wrap justify-between  pb-12">
           <div className="w-full sm:w-1/2 md:w-1/3 mb-10 md:mb-0 ">
             <Image

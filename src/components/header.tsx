@@ -53,7 +53,7 @@ const Header: React.FC = () => {
           height={900}
         ></Image>
 
-        <nav className="hidden md:flex gap-8 text-lg">
+        <nav className="hidden lg:flex gap-8 text-lg">
           {nav.map((item) => (
             <a
               key={item.name}
@@ -64,10 +64,10 @@ const Header: React.FC = () => {
             </a>
           ))}
         </nav>
-        <Button className="hidden md:inline-block">Schedule A Meeting</Button>
+        <Button className="hidden lg:inline-block">Schedule A Meeting</Button>
         <button
           onClick={() => setIsOpen((prev) => !prev)}
-          className="md:hidden text-3xl relative z-50"
+          className="lg:hidden text-3xl relative z-50"
         >
           <div ref={iconRef}>{isOpen ? <FiX /> : <FiMenu />}</div>
         </button>
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
 
       <div
         ref={menuRef}
-        className="md:hidden overflow-hidden h-0 opacity-0 bg-background"
+        className="lg:hidden overflow-hidden h-0 opacity-0 bg-background"
       >
         <div className="flex flex-col items-center justify-center gap-8 text-2xl mt-20">
           {nav.map((item) => (
