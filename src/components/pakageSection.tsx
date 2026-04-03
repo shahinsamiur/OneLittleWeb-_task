@@ -1,12 +1,13 @@
 "use client";
-
-import Switch from "@/src/utils/switchButton";
 import Image from "next/image";
 import { Button } from "../utils";
 import { pricePakage } from "../_mock/pricePakage";
 import { FaCheck } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
+import { useState } from "react";
 export default function PriceSection() {
+  const [enabled, setEnabled] = useState(false);
+
   return (
     <section className="flex flex-col justify-center items-center gap-6 w-full py-10">
       <h1 className="w-full text-center text-3xl font-semibold">
@@ -18,15 +19,28 @@ export default function PriceSection() {
       </p>
 
       {/* Switch */}
-      <div className="flex justify-center items-center gap-4 relative">
+      <div className="flex justify-center items-center gap-4 relative font-semibold">
         <p>Pay Monthly</p>
-        <Switch />
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => setEnabled(!enabled)}
+            className={`w-10 h-5 flex items-center rounded-full p-1 transition-all duration-300 cursor-pointer ${
+              enabled ? "bg-foreground" : "bg-[#04092152]"
+            }`}
+          >
+            <div
+              className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-all duration-300 ${
+                enabled ? "translate-x-4" : "translate-x-0"
+              }`}
+            />
+          </button>
+        </div>
         <p>Pay Yearly</p>
 
         <Image
           src="/save_svg.svg"
           alt="save"
-          className="w-32 absolute hidden md:block lg:-top-2 lg:-right-32"
+          className="w-32 absolute top-5 -right-12 md:block lg:-top-2 lg:-right-32"
           width={900}
           height={900}
         />
@@ -43,7 +57,9 @@ export default function PriceSection() {
               <p className="text-sm ">{item.desciption}</p>
 
               <div className="flex items-end gap-2">
-                <h1 className="text-4xl font-bold">{item.price}</h1>
+                <h1 className="text-4xl font-bold">
+                  {enabled ? item.priceYearly : item.price}
+                </h1>
                 <p className="text-sm ">/ Month</p>
               </div>
 

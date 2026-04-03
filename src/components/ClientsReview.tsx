@@ -5,11 +5,11 @@ export default function ClientsReview() {
     <div>
       {" "}
       <section className="flex flex-col justify-center items-center gap-6 w-full py-10">
-        <h1 className="w-full text-center text-3xl font-semibold">
+        <h1 className="w-4/5 text-center text-3xl font-semibold">
           Check Our Clients <span className="text-foreground">Review</span>
         </h1>
 
-        <p className="text-center font-medium lg:w-1/2">
+        <p className="text-center font-medium w-4/5 lg:w-1/2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
