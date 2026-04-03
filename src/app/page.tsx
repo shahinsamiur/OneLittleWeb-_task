@@ -3,6 +3,7 @@ import { ContainerWraper } from "@/src/utils";
 import Service from "../components/service";
 import PriceSection from "../components/pakageSection";
 import Tools from "../components/tools";
+import MeetingSection from "../components/meetingSection";
 export default function page() {
   return (
     <ContainerWraper>
@@ -10,6 +11,7 @@ export default function page() {
         <Service />
         <PriceSection />
         <Tools />
+        <MeetingSection />
       </div>
     </ContainerWraper>
   );

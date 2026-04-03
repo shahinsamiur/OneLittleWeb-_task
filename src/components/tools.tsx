@@ -25,11 +25,11 @@ export default function Tools() {
         commodo consequat.
       </p>
       <div className="bg-[#F6F6F6] w-full py-10 lg:p-10 flex justify-center items-center ">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 lg:gap-6 lg:w-2/3 justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-6 lg:w-2/3 justify-items-center">
           {tools.map((tool, index) => (
             <div
               key={index}
-              className="p-6 bg-background rounded-lg shadow-md w-30 lg:w-52"
+              className="p-6 bg-background rounded-lg shadow-md w-30 md:w-40 lg:w-52"
             >
               <Image
                 src={tool}
