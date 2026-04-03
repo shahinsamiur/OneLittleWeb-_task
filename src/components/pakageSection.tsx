@@ -9,7 +9,10 @@ export default function PriceSection() {
   const [enabled, setEnabled] = useState(false);
 
   return (
-    <section className="flex flex-col justify-center items-center gap-6 w-full py-10">
+    <section
+      className="flex flex-col justify-center items-center gap-6 w-full py-10"
+      id="price"
+    >
       <h1 className="w-full text-center text-3xl font-semibold">
         Airbnb Assistant <span className="text-foreground">Pricing</span>
       </h1>
@@ -60,7 +63,7 @@ export default function PriceSection() {
                 <h1 className="text-4xl font-bold">
                   {enabled ? item.priceYearly : item.price}
                 </h1>
-                <p className="text-sm ">/ Month</p>
+                <p className="text-sm ">/ {enabled ? "Yearly" : "Monthly"}</p>
               </div>
 
               <Button
