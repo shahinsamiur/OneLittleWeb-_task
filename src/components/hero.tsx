@@ -70,7 +70,7 @@ export default function Hero() {
           <div className="absolute -bottom-10 right-[50%] size-2 bg-[#5AF9FF] rounded-full"></div>
           <div className="absolute -top-30 right-[50%] size-3 bg-[#34E0A1] rounded-full"></div>
           <div className="absolute -bottom-10 left-0 size-2 bg-[#FFEC5A] rounded-full"></div>
-          <div className="absolute top-[40%] left-20 size-3 bg-[#FF5A5F] rounded-full"></div>
+          <div className="absolute hidden lg:inline-block top-[40%] left-20 size-3 bg-[#FF5A5F] rounded-full"></div>
           <div className="absolute -top-16 left-20 size-3 bg-[#635BFF] rounded-full"></div>
         </section>
       </div>
@@ -94,8 +94,8 @@ export default function Hero() {
               />
             ))}
           </Marquee>
-          <div className="w-20  z-50 h-full top-0 left-0 absolute bg-linear-to-r from-white to-transparent"></div>
-          <div className="w-20  z-50 h-full top-0 right-0 absolute bg-linear-to-l from-white to-transparent"></div>
+          <div className="w-20  z-30 h-full top-0 left-0 absolute bg-linear-to-r from-white to-transparent"></div>
+          <div className="w-20  z-30 h-full top-0 right-0 absolute bg-linear-to-l from-white to-transparent"></div>
         </div>
       </section>
     </div>
