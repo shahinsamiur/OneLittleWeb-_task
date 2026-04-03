@@ -64,7 +64,9 @@ const Header: React.FC = () => {
             </a>
           ))}
         </nav>
-        <Button className="hidden lg:inline-block">Schedule A Meeting</Button>
+        <Button className="hidden lg:inline-block" href="#meeting">
+          Schedule A Meeting
+        </Button>
         <button
           onClick={() => setIsOpen((prev) => !prev)}
           className="lg:hidden text-3xl relative z-50"
@@ -87,7 +89,9 @@ const Header: React.FC = () => {
               {item.name}
             </a>
           ))}
-          <Button className="">Schedule A Meeting</Button>
+          <Button className="" href="#meeting">
+            Schedule A Meeting
+          </Button>
         </div>
       </div>
     </header>

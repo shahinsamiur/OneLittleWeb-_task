@@ -6,15 +6,18 @@ export function Button({
   children,
   className,
   onClick,
+  href = "#" as string,
   ...props
-}: ButtonProps) {
+}: ButtonProps & { href: string }) {
   return (
-    <button
-      {...props}
-      onClick={onClick}
-      className={`${className} bg-foreground text-white px-4 py-2 rounded hover:bg-opacity-90 transition cursor-pointer text-base`}
-    >
-      {children}
-    </button>
+    <a href={href}>
+      <button
+        {...props}
+        onClick={onClick}
+        className={`${className} bg-foreground text-white px-4 py-2 rounded hover:bg-opacity-90 transition cursor-pointer text-base`}
+      >
+        {children}
+      </button>
+    </a>
   );
 }

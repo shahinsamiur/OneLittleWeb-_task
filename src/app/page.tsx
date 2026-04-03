@@ -9,7 +9,7 @@ import FAQSection from "../components/faq";
 export default function page() {
   return (
     <ContainerWraper>
-      <div className="min-h-screen flex flex-col justify-center items-center w-full gap-10 overflow-x-hidden">
+      <div className="min-h-screen flex flex-col justify-center items-center w-full  overflow-x-hidden">
         <Service />
         <PriceSection />
         <Tools />

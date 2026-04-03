@@ -78,7 +78,7 @@ const EmblaCarousel = () => {
   );
 
   return (
-    <div className="embla pt-10 sm:pt-14 md:pt-16  h-80! w-full! overflow-x-hidden">
+    <div className="embla pt-10 sm:pt-14 md:pt-16 pb-10 w-full! overflow-x-hidden">
       <div className="w-screen" ref={emblaRef}>
         <div className="flex">
           {slides.map((data, index) => (

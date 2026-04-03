@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
 import { Button } from "../utils";
+import { toast } from "react-toastify";
 export default function meetingSection() {
   const meetings = [
     {
@@ -38,6 +39,9 @@ export default function meetingSection() {
       title: "We have expart in our team",
     },
   ];
+  const handleOnClick = () => {
+    toast.error("you can't schedule a meeting right now.");
+  };
   return (
     <div>
       <section className="flex flex-col justify-center items-center gap-6 w-full py-10">
@@ -111,7 +115,11 @@ export default function meetingSection() {
                 );
               })}
 
-              <Button className="bg-foreground text-background mt-6 w-full lg:w-auto">
+              <Button
+                className="bg-foreground text-background mt-6 w-full lg:w-auto"
+                href="#"
+                onClick={handleOnClick}
+              >
                 Schedule A Meeting
               </Button>
             </div>

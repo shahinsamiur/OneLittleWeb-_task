@@ -1,4 +1,3 @@
-import "../styles/globals.css";
 import { Button } from "../utils";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";

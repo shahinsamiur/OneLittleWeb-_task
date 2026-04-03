@@ -30,7 +30,10 @@ export default function Service() {
               />
               <h1 className="text-xl">{service.name}</h1>
               <p>{service.description}</p>
-              <Button className="border border-border! bg-transparent! text-text! rounded-2xl!">
+              <Button
+                className="border border-border! bg-transparent! text-text! rounded-2xl!"
+                href="#"
+              >
                 Read More
               </Button>
             </div>

@@ -5,9 +5,14 @@ import { pricePakage } from "../_mock/pricePakage";
 import { FaCheck } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
 import { useState } from "react";
+import { toast } from "react-toastify";
 export default function PriceSection() {
   const [enabled, setEnabled] = useState(false);
-
+  const handleOnClick = () => {
+    toast.error(
+      "You can't buy this package right now, Please contact with us for more details.",
+    );
+  };
   return (
     <section
       className="flex flex-col justify-center items-center gap-6 w-full py-10"
@@ -67,6 +72,8 @@ export default function PriceSection() {
               </div>
 
               <Button
+                href="#"
+                onClick={handleOnClick}
                 className={`${item.id == 2 ? "bg-background! text-foreground!" : "bg-background! border-border! border! text-text! hover:bg-foreground! hover:text-background!"} text-background w-full`}
               >
                 Get Started Now
