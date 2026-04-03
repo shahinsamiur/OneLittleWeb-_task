@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { dmSans } from "@/src/styles/font";
 import "../styles/globals.css";
-import StateWraper from "@/src/state/stateWraper";
+
 import { ToastContainer } from "react-toastify";
 import Header from "@/src/components/header";
 import Footer from "@/src/components/footer";
@@ -19,12 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.variable}  antialiased`}>
-        <StateWraper>
-          <Header />
-          <Hero />
-          {children}
-          <Footer />
-        </StateWraper>
+        <Header />
+        <Hero />
+        {children}
+        <Footer />
         <ToastContainer />
       </body>
     </html>
