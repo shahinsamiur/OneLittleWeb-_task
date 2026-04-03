@@ -5,6 +5,7 @@ import PriceSection from "../components/pakageSection";
 import Tools from "../components/tools";
 import MeetingSection from "../components/meetingSection";
 import ClientsReview from "../components/ClientsReview";
+import FAQSection from "../components/faq";
 export default function page() {
   return (
     <ContainerWraper>
@@ -14,6 +15,7 @@ export default function page() {
         <Tools />
         <MeetingSection />
         <ClientsReview />
+        <FAQSection />
       </div>
     </ContainerWraper>
   );
