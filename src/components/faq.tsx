@@ -118,7 +118,7 @@ export default function FAQSection() {
         {/* Footer CTA */}
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-sm text-gray-500">
-            Still have questions?{" "}
+            Still have questions?
             <a
               href="#"
               className="text-rose-400 font-semibold hover:text-rose-500 transition-colors underline underline-offset-2"
