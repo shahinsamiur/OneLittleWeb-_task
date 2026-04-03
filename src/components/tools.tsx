@@ -18,18 +18,18 @@ export default function Tools() {
         Our <span className="text-foreground">Tools</span>
       </h1>
 
-      <p className="text-center font-medium w-1/2">
+      <p className="text-center font-medium lg:w-1/2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-      <div className="bg-[#F6F6F6] w-full p-10 flex justify-center items-center ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 w-2/3 justify-items-center">
+      <div className="bg-[#F6F6F6] w-full py-10 lg:p-10 flex justify-center items-center ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 lg:gap-6 lg:w-2/3 justify-items-center">
           {tools.map((tool, index) => (
             <div
               key={index}
-              className="p-6 bg-background rounded-lg shadow-md w-52"
+              className="p-6 bg-background rounded-lg shadow-md w-30 lg:w-52"
             >
               <Image
                 src={tool}
