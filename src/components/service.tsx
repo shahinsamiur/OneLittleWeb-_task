@@ -19,7 +19,7 @@ export default function Service() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="w-full md:w-2/5 lg:w-1/4 border-2 border-border p-4 h-96 space-y-4 rounded-2xl hover:shadow-lg transition duration-300 hover:border-transparent"
+              className="w-full md:w-2/5 lg:w-1/4 border-2 border-border p-4 md:h-90 lg:h-96 space-y-4 rounded-2xl hover:shadow-lg transition duration-300 hover:border-transparent"
             >
               <Image
                 src={service.image}
