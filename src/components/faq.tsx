@@ -5,6 +5,7 @@ import { GoPlus } from "react-icons/go";
 import { LuMinus } from "react-icons/lu";
 import Image from "next/image";
 import { Button } from "../utils";
+import { toast } from "react-toastify";
 const faqs = [
   {
     id: 1,
@@ -48,7 +49,11 @@ export default function FAQSection() {
   const [openId, setOpenId] = useState(faqs[0].id);
 
   const toggle = (id: number) => {
-    setOpenId((prev) => (prev === id ? null : id));
+    setOpenId((prev) => (prev === id ? 0 : id));
+  };
+
+  const handleOnclick = () => {
+    toast.error("This feature is not available right now");
   };
 
   return (
@@ -149,7 +154,9 @@ export default function FAQSection() {
             friendly team.
           </p>
           {/* Button */}
-          <Button>Get in touch</Button>
+          <Button href="#" onClick={handleOnclick}>
+            Get in touch
+          </Button>
         </div>
       </section>
     </>
