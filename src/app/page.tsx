@@ -4,6 +4,7 @@ import Service from "../components/service";
 import PriceSection from "../components/pakageSection";
 import Tools from "../components/tools";
 import MeetingSection from "../components/meetingSection";
+import ClientsReview from "../components/ClientsReview";
 export default function page() {
   return (
     <ContainerWraper>
@@ -12,6 +13,7 @@ export default function page() {
         <PriceSection />
         <Tools />
         <MeetingSection />
+        <ClientsReview />
       </div>
     </ContainerWraper>
   );
