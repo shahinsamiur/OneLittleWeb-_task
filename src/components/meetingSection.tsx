@@ -83,7 +83,10 @@ export default function meetingSection() {
           </div>
         </div>
 
-        <div className=" w-full  bg-[#FDEBF0] flex flex-col-reverse gap-6 lg:flex-row  justify-center items-center p-4">
+        <div
+          className=" w-full  bg-[#FDEBF0] flex flex-col-reverse gap-6 lg:flex-row  justify-center items-center p-4"
+          id="meeting"
+        >
           <div className="flex flex-col justify-center items-center gap-4 h-full w-full  lg:w-1/2 mx-auto">
             <h2 className="text-lg sm:text-xl md:text-2xl font-bold w-full">
               Few Reasons Why you Choose us?
