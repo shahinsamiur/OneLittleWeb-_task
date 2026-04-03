@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
 import { Button } from "../utils";
 import { toast } from "react-toastify";
+import { FaArrowRightLong } from "react-icons/fa6";
 export default function meetingSection() {
   const meetings = [
     {
@@ -116,11 +117,11 @@ export default function meetingSection() {
               })}
 
               <Button
-                className="bg-foreground text-background mt-6 w-full lg:w-auto"
+                className="bg-foreground text-background mt-6 w-full lg:w-auto flex justify-center items-center"
                 href="#"
                 onClick={handleOnClick}
               >
-                Schedule A Meeting
+                Schedule A Meeting <FaArrowRightLong className="ml-2" />
               </Button>
             </div>
           </div>

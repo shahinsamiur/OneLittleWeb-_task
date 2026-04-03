@@ -1,6 +1,7 @@
 import { Button } from "../utils";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { FaArrowRightLong } from "react-icons/fa6";
 export default function Hero() {
   const images = [
     "/sponsors/arbnb.svg",
@@ -27,8 +28,11 @@ export default function Hero() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <Button className="mt-4" href="#meeting">
-            Schedule A Meeting
+          <Button
+            className="mt-4 flex justify-center items-center"
+            href="#meeting"
+          >
+            Schedule A Meeting <FaArrowRightLong className="ml-2" />
           </Button>
           <a
             className="underline cursor-pointer hover:text-foreground"

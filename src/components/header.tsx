@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { FiMenu, FiX } from "react-icons/fi";
 import { nav } from "@/src/_mock/nav";
 import { Button } from "../utils";
+import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -64,8 +65,11 @@ const Header: React.FC = () => {
             </a>
           ))}
         </nav>
-        <Button className="hidden lg:inline-block" href="#meeting">
-          Schedule A Meeting
+        <Button
+          className="hidden lg:flex justify-center items-center "
+          href="#meeting"
+        >
+          <span> Schedule A Meeting</span> <FaArrowRightLong className="ml-2" />
         </Button>
         <button
           onClick={() => setIsOpen((prev) => !prev)}
@@ -89,8 +93,8 @@ const Header: React.FC = () => {
               {item.name}
             </a>
           ))}
-          <Button className="" href="#meeting">
-            Schedule A Meeting
+          <Button className="flex justify-center items-center" href="#meeting">
+            Schedule A Meeting <FaArrowRightLong className="ml-2" />
           </Button>
         </div>
       </div>
