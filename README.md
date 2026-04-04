@@ -96,4 +96,4 @@ These are the available commands:
 If you have any questions or need clarification, feel free to reach out.
 
 Thanks again
-**— Shahin Samiur**
+Shahin Samiur
