@@ -9,8 +9,8 @@ Thank you for reviewing my interview task. I’ve provided clear instructions be
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/shahinsamiur/next_simple_template
-cd next_simple_template
+git clone https://github.com/shahinsamiur/OneLittleWeb-_task
+cd OneLittleWeb-_task
 ```
 
 ---
@@ -86,7 +86,7 @@ These are the available commands:
 
 - react-toastify
 
-### 🛠 Dev Dependencies
+### Dev Dependencies
 
 - TypeScript
 - ESLint + Next config
