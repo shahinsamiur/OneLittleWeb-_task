@@ -88,6 +88,7 @@ const Header: React.FC = () => {
             <a
               key={item.name}
               href={item.path}
+              onClick={() => setIsOpen((prev) => !prev)}
               className="hover:opacity-70 transition"
             >
               {item.name}
