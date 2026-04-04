@@ -58,7 +58,7 @@ export default function FAQSection() {
 
   return (
     <>
-      <section className="min-h-screen bg-[#F9FAFB] flex items-center justify-center px-4 py-10 font-sans">
+      <section className=" bg-[#F9FAFB] flex items-center justify-center px-4 py-10 font-sans">
         <div className="w-full max-w-2xl">
           <div className="mb-12">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-rose-400 mb-3">
